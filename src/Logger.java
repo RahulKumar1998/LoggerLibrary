@@ -8,9 +8,12 @@ public class Logger {
 
     private LoggerConfig loggerConfig;
     private static Logger instance;
+
+    //singleton Logger Instance
     private Logger(LoggerConfig loggerConfig) {
         this.loggerConfig = loggerConfig;
     }
+
 
     public static Logger getInstance(LoggerConfig loggerConfig) {
         if (instance == null) {

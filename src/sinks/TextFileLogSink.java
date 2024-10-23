@@ -9,6 +9,8 @@ import java.util.zip.GZIPOutputStream;
 
 public class TextFileLogSink implements LogSink {
 
+    //Implement File Sink along with log-rotation enabled
+
     private String logFilePath;
     private long maxSize;
     private int fileCount = 0;

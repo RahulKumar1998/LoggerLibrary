@@ -1,5 +1,7 @@
 public class LoggerConfig {
 
+    //get TimeFormat from client
+
     private String timeFormat;
     private LogProcessor logProcessor;
 

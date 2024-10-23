@@ -13,6 +13,7 @@ public class LogProcessor {
         this.levelSinkMap = levelSinkMap;
     }
 
+    //process the message to be sent to all sinks associated with a log level
     public void process(LogMessage message) {
         List<LogSink> sinks = levelSinkMap.get(message.getLevel());
         if (sinks != null) {
